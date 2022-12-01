@@ -16,6 +16,11 @@
 
 # Set to 0 if you do not have a GPU.
 USE_GPU=1
+
+if [[ $(nvidia-smi) == *"failed"* ]]; then
+  USE_GPU=0
+fi
+
 # Path to a directory `base/` with images in `base/images/`.
 DATASET_PATH=$1
 # Recommended CAMERA values: OPENCV for perspective, OPENCV_FISHEYE for fisheye.
