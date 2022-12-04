@@ -3,7 +3,7 @@ Config.near = 0.2
 Config.far = 1e6
 Config.factor = 4
 Config.batch_size = 1024
-Config.max_steps = 2000
+Config.max_steps = 1000
 Config.forward_facing = True
 
 Model.raydist_fn = @jnp.reciprocal
@@ -17,6 +17,6 @@ PropMLP.disable_rgb = True
 
 NerfMLP.warp_fn = @coord.contract
 NerfMLP.net_depth = 8
-NerfMLP.net_width = 1024
+NerfMLP.net_width = 256
 NerfMLP.disable_density_normals = True
 
