@@ -4,12 +4,12 @@ Config.far = 1.
 Config.factor = 4
 Config.forward_facing = True
 Config.adam_eps = 1e-8
+Config.batch_size = 1024
+Config.max_steps = 1000
 
 Model.ray_shape = 'cylinder'
 Model.opaque_background = True
-Model.num_levels = 2
 Model.num_prop_samples = 128
-Model.num_nerf_samples = 32
 
 PropMLP.net_depth = 4
 PropMLP.net_width = 256
