@@ -4,7 +4,6 @@ Config.far = 6
 Config.factor = 4
 Config.batch_size = 4096
 Config.max_steps = 10000
-Config.compute_normal_metrics = True
 Config.data_loss_type = 'mse'
 Config.distortion_loss_mult = 0.0
 Config.orientation_loss_mult = 0.1
