@@ -2,7 +2,7 @@ Config.dataset_loader = 'llff'
 Config.near = 1
 Config.far = 100
 Config.factor = 2
-Config.batch_size = 4096
+Config.batch_size = 2048
 Config.max_steps = 5000
 
 Config.render_path = True
@@ -10,6 +10,8 @@ Config.render_video_fps = 30
 
 Model.raydist_fn = @jnp.reciprocal
 Model.opaque_background = True
+Model.num_prop_samples = 128  # Using extra samples for now because of noise instability.
+Model.num_nerf_samples = 128
 
 PropMLP.warp_fn = @coord.contract
 PropMLP.net_depth = 4
