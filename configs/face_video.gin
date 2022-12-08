@@ -1,6 +1,6 @@
 Config.dataset_loader = 'llff'
-Config.near = 1
-Config.far = 10
+Config.near = 2
+Config.far = 6
 Config.factor = 4
 Config.batch_size = 4096
 Config.max_steps = 10000
