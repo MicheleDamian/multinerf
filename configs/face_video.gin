@@ -10,8 +10,6 @@ Config.render_video_fps = 30
 
 Model.raydist_fn = @jnp.reciprocal
 Model.opaque_background = True
-Model.num_prop_samples = 128  # Using extra samples for now because of noise instability.
-Model.num_nerf_samples = 128
 
 PropMLP.warp_fn = @coord.contract
 PropMLP.net_depth = 4
