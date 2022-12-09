@@ -7,12 +7,15 @@ Config.max_steps = 5000
 
 Model.raydist_fn = @jnp.reciprocal
 Model.opaque_background = True
-
-PropMLP.warp_fn = @coord.contract
-PropMLP.net_depth = 4
-PropMLP.net_width = 256
-PropMLP.disable_density_normals = False
-PropMLP.disable_rgb = True
+Model.num_levels = 2
+Model.single_mlp = True
+Model.num_prop_samples = 128  # This needs to be set despite single_mlp = True.
+Model.num_nerf_samples = 128
+Model.anneal_slope = 0.
+Model.dilation_multiplier = 0.
+Model.dilation_bias = 0.
+Model.single_jitter = False
+Model.resample_padding = 0.01
 
 NerfMLP.warp_fn = @coord.contract
 NerfMLP.net_depth = 8
