@@ -5,9 +5,6 @@ Config.factor = 4
 Config.batch_size = 2048
 Config.max_steps = 10000
 
-Config.render_path = True
-Config.render_video_fps = 30
-
 Model.raydist_fn = @jnp.reciprocal
 Model.opaque_background = True
 
