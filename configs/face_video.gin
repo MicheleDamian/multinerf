@@ -2,7 +2,7 @@ Config.dataset_loader = 'llff'
 Config.near = 1
 Config.far = 10
 Config.factor = 4
-Config.batch_size = 4096
+Config.batch_size = 2048
 Config.max_steps = 10000
 
 Config.render_path = True
